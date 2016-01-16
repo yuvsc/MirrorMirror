@@ -1,2 +1,2 @@
-# -MirrorMirror
+# MirrorMirror on the wall...
 DragonHacks 2016 project
