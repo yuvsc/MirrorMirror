@@ -112,3 +112,28 @@ body {
 #weather-week > canvas {
     vertical-align: text-bottom;
 }
+
+/* CSS for Center: Greeting */
+#greeting {
+    font-size: 90px;
+}
+
+/* CSS for photo */
+#selfie {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipH;
+}
+
+/* Displays */
+.sleep-cover {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}

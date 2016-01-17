@@ -1,9 +1,9 @@
 <html>
     <head>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.1.0/annyang.min.js"></script>
+        <script src="js/annyang.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="js/javascript" src="js/pryv.js"></script>
+        <script src="js/photobooth_min.js"></script>
         <script src="js/skycons.js"></script>
         <script src="js/moment.js"></script>
         <script src="js/config.js"></script>
@@ -34,22 +34,28 @@
                 </div>
             </div>
             <div id="center">
-                <div id="center-left" class="col-1-3">
+                <div id="center-left" class="col-1-4">
                     <span>CENTER LEFT</span>
                 </div>
-                <div id="center-middle" class="col-1-3">
-                    <span>CENTER MIDDLE</span>
+                <div id="center-middle" class="col-2-4">
+                    <!--<span>CENTER MIDDLE</span>-->
+                    <span id="greeting"></span>
+                    <div>
+                        <div id="example" style="width: 470px; height: 300px;"></div>
+                        <div id="gallery"><img id="selfie"></div>
+                    </div>
                 </div>
-                <div id="center-right" class="col-1-3">
+                <div id="center-right" class="col-1-4">
                     <span>CENTER RIGHT</span>
                 </div>
             </div>
             <div id="bottom">
                 <div id="bottom-left" class="col-1-3">
-                    <span>BOTTOM LEFT</span>
+                    <!--<span>BOTTOM LEFT</span>-->
                 </div>
                 <div id="bottom-middle" class="col-1-3">
-                    <span>BOTTOM MIDDLE</span>
+                    <!--<span>BOTTOM MIDDLE</span>-->
+                    <span id="speech"></span>
                 </div>
                 <div id="bottom-right" class="col-1-3">
                     <!--<span>BOTTOM RIGHT</span>-->
@@ -63,6 +69,7 @@
                 </div>
             </div>
         </div>
+        <div id="sleep-cover"></div>
         <script src="js/main.js"></script>
     </body>
 </html>
