@@ -22,6 +22,18 @@ body {
   width: 33.33%;
 }
 
+.col-1-4 {
+  width: 25%;
+}
+
+.col-2-4 {
+  width: 50%;
+}
+
+.col-0-4 {
+    display: none;
+}
+
 #grid:after {
   content: "";
   display: table;
@@ -53,4 +65,50 @@ body {
     position: fixed;
     bottom: 10;
     width: 99%;
+}
+
+/* Top Left CSS */
+#date {
+    font-size: 42px;
+}
+
+#time {
+    font-size: 110px;
+}
+
+/*Top Right CSS */
+#weather-today {
+    font-size: 80px;
+}
+
+#weather-description {
+    padding-left: 50%;
+}
+
+#weather-description > #weatherText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#weather-week > span {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+#weather-week > .day {
+    display: inline-block;
+    margin-right: 10px;
+    width: 50px;
+}
+
+#weather-week > .tempreture {
+    display: inline-block;
+    width: 60px;
+}
+
+#weather-week > canvas {
+    vertical-align: text-bottom;
 }

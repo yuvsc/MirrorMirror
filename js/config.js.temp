@@ -1,0 +1,5 @@
+var FORCAST_API_KEY = "";
+var thingspeak = {
+    "channel": "",
+    "api_key": ""
+    };

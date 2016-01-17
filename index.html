@@ -1,22 +1,36 @@
 <html>
     <head>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.1.0/annyang.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.1.0/annyang.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="js/javascript" src="js/pryv.js"></script>
+        <script src="js/skycons.js"></script>
+        <script src="js/moment.js"></script>
         <script src="js/config.js"></script>
-        <script src="js/main.js"></script>
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <div id="grid">
             <div id="top">
-                <div id="top-left" class="col-1-3">
-                    <span>TOP LEFT</span>
+                <div id="top-left" class="col-2-4">
+                    <!--<span>TOP LEFT</span>-->
+                    <span id="date">TOP LEFT</span>
+                    <span id="time">TOP LEFT</span>
                 </div>
-                <div id="top-middle" class="col-1-3">
+                <div id="top-middle" class="col-0-4">
                     <span>TOP MIDDLE</span>
                 </div>
-                <div id="top-right" class="col-1-3">
-                    <span>TOP RIGHT</span>
+                <div id="top-right" class="col-2-4">
+                    <!--<span>TOP RIGHT</span>-->
+                    <div id="weather-today"><canvas id="todayIcon" width="64" height="64"></canvas><span id="todayTemp"></span></div>
+                    <div id="weather-description"><span id="weatherText"></span></div>
+                    <div id="weather-week"><canvas id="icon0" width="24" height="24"></canvas><span id="day0" class="day"></span><span id="high0" class="temperature"></span><span id="low0" class="temperature"></span></div>
+                    <div id="weather-week"><canvas id="icon1" width="24" height="24"></canvas><span id="day1" class="day"></span><span id="high1" class="temperature"></span><span id="low1" class="temperature"></span></div>
+                    <div id="weather-week"><canvas id="icon2" width="24" height="24"></canvas><span id="day2" class="day"></span><span id="high2" class="temperature"></span><span id="low2" class="temperature"></span></div>
+                    <div id="weather-week"><canvas id="icon3" width="24" height="24"></canvas><span id="day3" class="day"></span><span id="high3" class="temperature"></span><span id="low3" class="temperature"></span></div>
+                    <div id="weather-week"><canvas id="icon4" width="24" height="24"></canvas><span id="day4" class="day"></span><span id="high4" class="temperature"></span><span id="low4" class="temperature"></span></div>
+                    <div id="weather-week"><canvas id="icon5" width="24" height="24"></canvas><span id="day5" class="day"></span><span id="high5" class="temperature"></span><span id="low5" class="temperature"></span></div>
+                    <div id="weather-week"><canvas id="icon6" width="24" height="24"></canvas><span id="day6" class="day"></span><span id="high6" class="temperature"></span><span id="low6" class="temperature"></span></div>
                 </div>
             </div>
             <div id="center">
@@ -38,9 +52,17 @@
                     <span>BOTTOM MIDDLE</span>
                 </div>
                 <div id="bottom-right" class="col-1-3">
-                    <span>BOTTOM RIGHT</span>
+                    <!--<span>BOTTOM RIGHT</span>-->
+                    <div id="mood">
+                        <span>Previously recorded mood:<br></span>
+                        <span id="mood-text"></span>
+                        <span> on </span>
+                        <span id="mood-date"></span>
+
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
